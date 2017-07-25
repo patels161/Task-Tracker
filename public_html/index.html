@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Task Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Task Tracker</h1>
+            <h4>v2.0</h4>
+        </div>
+        <div id="main">
+            <div id="form">
+                <h2>Create A Task</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="task">Task Name</label>
+                            <input type="text" class="form-control" id="tname" placeholder="Enter task" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="dt">Date</label>
+                            <input type="date" class="form-control" id="date" name="dt">
+                        </div>
+                        <div class="form-group">
+                            <label>Assigned To</label>
+                            <input type="text" class="form-control" placeholder="Enter name" id="nm" name="aname">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="button" onclick="myfunc()">Submit</button>
+                    </form>
+            </div>
+            <div id="list" onload="table()">
+                <h2>Existing Table</h2>
+                
+                <p id="sa"></p>
+                <p id="as"></p>
+            </div>
+        </div>
+            <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

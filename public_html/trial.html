@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pageload",function(){
+  alert("pageload event fired - the external page has been successfully loaded and inserted into the DOM!");
+});
+</script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>Header Text</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="index.html">External page</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+</body>
+</html>
+
